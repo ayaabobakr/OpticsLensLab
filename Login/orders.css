@@ -1,0 +1,158 @@
+﻿/* Reset default styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+/* table.css */
+
+header {
+    background-color: #f6561f;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+
+/* Navigation styles */
+/* table.css */
+
+nav {
+    background-color: #f6561f;
+    padding: 10px;
+}
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+            nav ul li a {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 8px 16px;
+                border-radius: 4px;
+            }
+
+                nav ul li a:hover {
+                    background-color: #d5411a;
+                }
+
+                nav ul li a:focus {
+                    outline: none;
+                    background-color: #d5411a;
+                }
+
+            nav ul li.active a {
+                background-color: #d5411a;
+            }
+
+
+
+/* Main content styles */
+main.container {
+    padding: 20px;
+}
+
+/* table.css */
+
+/* table.css */
+
+.patient-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .patient-table caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .patient-table th,
+    .patient-table td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+        word-break: keep-all;
+        font-size: 12px; /* Adjust the font size as needed */
+    }
+
+    .patient-table th {
+        background-color: #f2f2f2;
+    }
+
+    .patient-table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .patient-table tbody tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    .patient-table button.action-button {
+        padding: 5px 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+        .patient-table button.action-button:hover {
+            background-color: #45a049;
+        }
+
+.action-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f6561f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+    .action-button:hover {
+        background-color: #f6561f;
+    }
+
+/* Footer styles */
+footer {
+    background-color: #f6561f;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="productPage.css">
+    <title>CSS SLIDER</title>
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><h1>Optical Lab</h1></div>
+        <ul class="menu">
+
+            <p> <a href="Opticallab.html">Home</a></p>
+  
+  </nav>
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="slider-img-1"></div>
+                <div id="slider-img-2"></div>
+                <div id="slider-img-3"></div>
+                <div id="slider-img-4"></div>
+            </div>
+        </div>
+
+        <div class="wrapper-text">
+            <div class="para"><p>Choose Your Prescription or Cosmetic Lens Type</p></div>
+            <button id="firstButton" class="btn">Click to start order</button>
+            <select id="myselect" class="option">
+            <option value="option1">Lens Type</option>
+            <option value="option2">Everyday Lenses</option>
+            <option value="option3">Sunglasses</option> 
+            <option value="option4">Blue Light BLocking Lenses</option>
+          
+
+               
+    </select>
+     <script>
+    document.getElementById("firstButton").addEventListener("click", function() {
+      var myselect = document.getElementById("myselect");
+      myselect.style.display = "block";
+    });
+  </script>
+
+
+    <div class="button-group" id="buttonGroup1">
+
+          <button style="background-color: #d3d3d3; font-size: 15px; border-radius: 5px; font-weight: bold; " onclick="showContent()">Single Vision</button>
+          <button style="background-color: #d3d3d3; font-size: 15px; border-radius: 5px; font-weight: bold;" onclick="showContent()">Bifocal Vision</button>
+
+    <button style="background-color: #d3d3d3; font-size: 15px; border-radius: 5px; font-weight: bold;" onclick="hideContent()">No Prescription</button>
+    </div>
+
+    <script>
+        document.getElementById("myselect").addEventListener("change", function() {
+          var selectedOption = this.value;
+          var buttonGroups = document.getElementsByClassName("button-group");
+    
+          for (var i = 0; i < buttonGroups.length; i++) {
+            buttonGroups[i].style.display = "none";
+          }
+    
+          if (selectedOption === "option1") {
+            document.getElementById("buttonGroup1").style.display = "block";
+          } else if (selectedOption === "option2") {
+            document.getElementById("buttonGroup1").style.display = "block";
+          } else if (selectedOption === "option3") {
+            document.getElementById("buttonGroup1").style.display = "block";
+          } else if (selectedOption === "option4") {
+            document.getElementById("buttonGroup1").style.display = "block";
+          }
+        });
+      </script>
+
+      
+
+      <script>
+    document.getElementById("firstButton").addEventListener("click", function() {
+      var myselect = document.getElementById("myselect");
+      myselect.style.display = "block";
+    });
+  </script>
+
+    <div class="test" id="content" >
+      <p style="font-size: large; font-weight: bold;">Lens Material</p>
+
+      <select style="font-size: medium; " id="myselect2" >
+              <option value="option1">Select one</option>
+              <option value="option2">Polycarbonate</option>
+              <option value="option3">Trivex</option> 
+              <option value="option4">Cr-39</option> 
+                
+            </select>
+            <p style="font-size: large; font-weight: bold; margin-top: 1rem;">Coatings</p>
+            <select style="font-size: medium; " id="myselect3" >
+              <option value="option1">None</option>
+              <option value="option2">Standard coating</option>
+              <option value="option3">Super Double-thick</option> 
+                
+            </select>
+    </div>     
+    
+<script>
+  
+  function showContent() {
+            var content = document.getElementById('content');
+            content.style.display = 'block';
+        }
+
+        function hideContent() {
+            var content = document.getElementById('content');
+            content.style.display = 'none';
+        }
+
+</script>
+
+<button style="margin-left: 2rem; margin-top: 3rem;" id="lastButton" class="btn">Add to Cart</button>
+
+</div>
+        
+
+<div class="button-holder">
+            <a href="#akoni" class="button"></a>
+            <a href="#akoni2" class="button"></a>
+            <a href="#akoni3" class="button"></a>
+            <a href="#akoni4" class="button"></a>
+
+        </div>
+    </div>
+
+    <div class="Description">
+        <h2>Cat-eye Women’s Glasses 
+            </h2>
+         <p style="font-family:Verdana, Geneva, Tahoma, sans-serif">
+            Rectangular Frame with Fun Two-toned Colors<br>
+            This rectangular frame is spiced up with your choice of three two-toned color options:<br>
+            demi rose, demi plum, and brown/teal. The high-gloss handmade Zyl plastic and grooved metal temple detail adds fashion flair.<br>
+            Are you in search of all-day comfort? You’ll get exactly that with the frame’s light weight and spring hinges.<br>
+            </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Optical Lab Project. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
